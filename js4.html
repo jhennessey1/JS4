@@ -1,6 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="modSquad">
 	<head>
-		<script src="js4.js"></script>
+		<title>Victims and Volunteers</title>
+		<link rel="stylesheet" href="main.css"/>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.js"></script>
+		<script type="text/javascript" src="js4.js"></script>
 	</head>
+	<body ng-controller="squadRoller">
+		<h1>Victims</h1>
+		<div class="victimForm">
+			<form>
+				Name: <input type="text" ng-model="firstName"/><submit></submit><br/>
+				Phone Number: <input type="text" ng-model="phoneNumber"/><br/>
+				Street: <input type="text" ng-model="street"/><br/>
+				<input type="submit" ng-click="subVic($event)"/>
+			</form>
+		</div>
+		<ul class="victims">
+			
+		</ul>
+	</body>
 </html>
